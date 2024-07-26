@@ -1,0 +1,94 @@
+
+.signInWrapper {
+  min-height: 100vh;
+  /* width: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(71.17deg, #feaf00 19.35%, #f8d442 90.12%);
+}
+
+.signIn_Form {
+  max-width: 475px;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 2px 5px 10px 0px #0000001a;
+}
+
+.headingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 14px;
+  padding-bottom: 36px;
+}
+.signIn_title {
+  width: 342px;
+  font-family: MontserratBold;
+  font-size: 32px;
+  padding-left: 12px;
+  margin-bottom: 43px;
+  border-left: 6px solid #f8d442;
+  text-wrap: nowrap;
+  text-align: center;
+}
+.signIn_msg1 {
+  font-family: MontserratMedium;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 9px;
+}
+.signIn_msg2 {
+  font-family: Montserrat;
+  font-size: 14px;
+  text-align: center;
+  color: #6c6c6c;
+}
+.signIn_input {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-family: MontserratMedium;
+  font-size: 14px;
+  text-align: left;
+  color: #6c6c6c;
+  margin-top: 20px;
+}
+.textfield {
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  padding: 15px;
+  margin-top: 10px;
+  font-family: Montserrat;
+  font-size: 12px;
+  color: #cdcdcd;
+}
+.signIn_button {
+  font-family: Montserrat;
+  font-size: 14px;
+  width: 100%;
+  background: #feaf00;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  padding: 15px;
+  margin: 30px 0px;
+}
+.signIn_resetPassword {
+  font-family: Montserrat;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 11px;
+}
+.resetRedirect {
+  font-family: MontserratMedium;
+  color: #feaf00;
+}

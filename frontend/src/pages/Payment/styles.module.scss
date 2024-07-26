@@ -1,0 +1,15 @@
+.mainPage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #fff;
+}

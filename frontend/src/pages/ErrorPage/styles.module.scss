@@ -1,0 +1,28 @@
+.error {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #feaf00 10%, #f8d442 100%);;
+  color: #fff;
+  p{
+    text-align: center;
+  }
+}
+.return {
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+
+  font-family: MontserratMedium;
+  text-decoration: none;
+
+  background: transparent;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  border: 2px solid #fff;
+
+  cursor: pointer;
+}

@@ -1,0 +1,57 @@
+.infoCard {
+  flex: 1;
+  max-width: 450px;
+  min-width: 210px;
+  width: 100%;
+  background: #599bc6;
+  border-radius: 8px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 5px 10px 0px #0000001a;
+  cursor: pointer;
+  &._1 {
+    background: #f0f9ff;
+  }
+  &._2 {
+    background: #fef6fb;
+  }
+  &._3 {
+    background: #fefbec;
+  }
+  &._4 {
+    background: linear-gradient(110.42deg, #feaf00 18.27%, #f8d442 91.84%);
+    .cardIcons {
+      color: #fff;
+    }
+  }
+}
+
+.infoCard:hover {
+  filter: brightness(90%);
+}
+
+.cardIcons {
+  font-family: Montserrat;
+  font-size: 14px;
+  text-align: left;
+  color: #6c6c6c;
+  padding: 20px;
+}
+
+.statistic {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-family: MontserratBold;
+  font-size: 30px;
+  text-align: left;
+  padding: 20px;
+  padding-top: 0px;
+  .unit {
+    padding: 3px 5px;
+    font-size: 18px;
+  }
+}
