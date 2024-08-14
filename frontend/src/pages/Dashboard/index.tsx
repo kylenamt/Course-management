@@ -4,7 +4,6 @@ import DashboardCard from '../../components/Dashboard'
 function Dashboard() {
   return (
     <DashboardCard/>
-        
   )
 }
 

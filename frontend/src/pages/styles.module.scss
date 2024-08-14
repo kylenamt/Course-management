@@ -11,7 +11,7 @@
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
-  min-height: 100vh;
+  min-height: 100%;
   width: 100%;
   background-color: #fff;
 }
@@ -32,16 +32,6 @@
     left: 20px;
   }
 }
-#menuButton span {
-  position: absolute;
-  width: 100%;
-  max-height: 2px;
-  height: 100%;
-  background: #000;
-  border-radius: 100vw;
-  transition: 0.5s;
-  
-}
 #menuButton {
   max-width: 100%;
   max-height: 100%;
@@ -51,32 +41,41 @@
   justify-content: space-between;
   align-items: center;
   padding: 0px;
+  span {
+    position: absolute;
+    width: 100%;
+    max-height: 2px;
+    height: 100%;
+    background: #000;
+    border-radius: 100vw;
+    transition: 0.5s;
+  }
   span:nth-child(1) {
-      top:0;
-    }
-    span:nth-child(2) {
-      top:50%;
-      transform: translate(0px,-1px) ;
-    }
-    span:nth-child(3) {
-      bottom:0;
-    }
+    top: 0;
+  }
+  span:nth-child(2) {
+    top: 50%;
+    transform: translate(0px, -1px);
+  }
+  span:nth-child(3) {
+    bottom: 0;
+  }
   &.open {
     span:nth-child(1) {
-      transform: rotate(45deg)  ;
-      top:50%;
+      transform: rotate(45deg);
+      top: 50%;
     }
     span:nth-child(2) {
       display: none;
     }
     span:nth-child(3) {
       transform: rotate(-45deg);
-      top:50%
+      top: 50%;
     }
   }
-  &.close {
-    height: 100%;
-  }
+  // &.close {
+  //   height: 100%;
+  // }
 }
 
 @media (max-width: 768px) {
@@ -85,7 +84,7 @@
   }
   #mainPage {
     &.open {
-      flex: 0;
+      display: none;
     }
   }
 }

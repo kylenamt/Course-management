@@ -7,11 +7,11 @@ import { NavLink } from "react-router-dom";
 import { menuConst } from "../../constants/sidebar";
 import { SideBarState,toggleSideBar } from "../../contexts/toggleMenu.context";
 
-const propUser1 = userInformationWindow(avt.avatar1, "Stan Edgar", "Admin");
+const propUser1 = UserInformationWindow(avt.avatar1, "Stan Edgar", "Admin");
 
 function Sidebar() {
   const menuOptions = menuConst.map(({ name, link, icon }) =>
-    menuOption(name, link, icon)
+    MenuOption(name, link, icon)
   );
   const isOpen = useContext<toggleSideBar>(SideBarState)
 
@@ -21,8 +21,9 @@ function Sidebar() {
       <div className={styles.titleContainer}>
         <h1 className={styles.heading}>CRUD OPERATIONS</h1>
       </div>
-      {propUser1}
+      
       <div className={styles.pageMenu}>
+        {propUser1}
         <div>
           {menuOptions}
         </div>
@@ -41,7 +42,7 @@ function Sidebar() {
   );
 }
 
-function userInformationWindow(avatar: string, name: string, role: string) {
+function UserInformationWindow(avatar: string, name: string, role: string) {
   return (
     <div className={styles.userInfo}>
       <div className={styles.pictureFrame}>
@@ -53,12 +54,14 @@ function userInformationWindow(avatar: string, name: string, role: string) {
   );
 }
 
-function menuOption(optionName: string, location: string, iconSource: string) {
+function MenuOption(optionName: string, location: string, iconSource: string) {
+    const isOpen = useContext<toggleSideBar>(SideBarState)
   return (
     <NavLink
       className={({isActive}) =>isActive?`${styles.pageOptions} ${styles.active}`:styles.pageOptions}
       id={optionName}
       to={location}
+      onClick={isOpen.toggle}
     >
       <img src={iconSource} alt="" />
       <p>{optionName}</p>
