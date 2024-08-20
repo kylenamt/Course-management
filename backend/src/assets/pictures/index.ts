@@ -1,5 +1,5 @@
-import { avatar1 } from "./stock.jpg" 
+// import avatar1 from "../pictures/"
 
-export const avt = {
-  avatar1
-}
+// export const avt = {
+//   avatar1
+// }
